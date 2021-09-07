@@ -44,7 +44,10 @@ for (i=0; i<studenti.length; i++){
 for (i=0; i<3; i++){
     let newStudenteNome = prompt('inserisci il NOME del nuovo studente');
     let newStudenteCognome = prompt('inserisci il COGNOME del nuovo studente');
-    let newStudenteEta = parseInt(prompt('inserisci l\'ETÀ del nuovo studente'));
+    let newStudenteEta;
+    do{
+        newStudenteEta = parseInt(prompt('inserisci l\'ETÀ del nuovo studente'));
+    } while(isNaN(newStudenteEta) || newStudenteEta > 100);
 
     let newStudente = {
         "nome": newStudenteNome,
@@ -60,3 +63,6 @@ console.log('###----- Secondo Ciclo -----###');
 for (i=0; i<studenti.length; i++){
     console.log(`Nome: ${studenti[i].nome} / Cognome: ${studenti[i].cognome}`)
 };
+
+// B-5 Console log di tutto l'array
+console.log(studenti);
