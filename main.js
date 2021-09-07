@@ -1,10 +1,3 @@
-// Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
-// Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
-// ----------------------------------------- //
-// Creare un array di oggetti di studenti.
-// Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
-// Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-
 
 // A-1) Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età.
 var studente01 = {
@@ -38,5 +31,20 @@ var studenti = [
         "eta":"36",
     },
 ];
-// Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
-// Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+// B-2) Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+console.log('');
+console.log('###----- Primo Ciclo -----###');
+for (i=0; i<studenti.length; i++){
+    console.log(`Nome: ${studenti[i].nome} / Cognome: ${studenti[i].cognome}`)
+};
+
+
+// B-3) Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+// B-4) Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+console.log('');
+console.log('###----- Secondo Ciclo -----###');
+for (i=0; i<studenti.length; i++){
+    console.log(`Nome: ${studenti[i].nome} / Cognome: ${studenti[i].cognome}`)
+};
